@@ -5,8 +5,8 @@ using System.Collections.Generic;
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-//var products = new List<string> { "لپتاپ", "موبایل", "کتاب" };
-var products = new List<string> { "لپتاپ", "موبایل",  };
+ 
+var products = new List<string> { "لپتاپ", "موبایل", "کتاب","tablet", "feature/update-products" };
 
 app.MapGet("/products", () => products);
 
