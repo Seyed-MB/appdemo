@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
  
-var products = new List<string> { "لپتاپ", "موبایل", "کتاب","tablet" };
+var products = new List<string> { "لپتاپ", "موبایل", "کتاب","tablet", "feature/update-products" };
 
 app.MapGet("/products", () => products);
 
