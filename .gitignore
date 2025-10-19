@@ -1,0 +1,14 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Build Folders
+bin/
+obj/
+publish/
+
+# Rider IDE
+.idea/
+
+ 
