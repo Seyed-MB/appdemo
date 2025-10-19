@@ -1,19 +1,10 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
-using System.Collections.Generic;
 
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
- 
-var products = new List<string> { "لپتاپ", "موبایل", "کتاب","tablet", "feature/update-products" };
-
-app.MapGet("/products", () => products);
-
-app.MapPost("/products", (string newProduct) =>
-{
-    products.Add(newProduct);
-    return Results.Ok(newProduct);
-});
+app.MapGet("/", () => "salam agha mostafa");
 
 app.Run("http://0.0.0.0:5000");
